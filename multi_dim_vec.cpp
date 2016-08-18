@@ -61,7 +61,8 @@ test_d[2999][99][1][12]=200;
 std::cout << test_d[2999][99][1][12] <<std::endl;
 
 // without typedef
-vector4D test_e(dim1, std::vector<std::vector<std::vector<float> > >(dim2, std::vector<std::vector<float> >(dim3, std::vector<float>(dim4))));
+std::vector<std::vector<std::vector<std::vector<float> > > >
+test_e(dim1, std::vector<std::vector<std::vector<float> > >(dim2, std::vector<std::vector<float> >(dim3, std::vector<float>(dim4))));
 test_e[2999][99][1][12]=300;
 std::cout << test_e[2999][99][1][12] <<std::endl;
 
